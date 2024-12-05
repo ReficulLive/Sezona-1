@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReficulLive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+ /* Styly pro responzivní design */
+ @media (max-width: 600px) {
+            body {
+                font-size: 14px; /* Menší velikost písma pro mobilní zařízení */
+            }
+            header {
+                padding: 15px 0; /* Menší padding pro hlavičku */
+            }
+            .club {
+                padding: 15px; /* Menší padding pro kluby */
+                margin: 10px 0; /* Menší mezera mezi kluby */
+            }
+            .club img {
+                max-width: 100%; /* Maximální šířka obrázku na 100% */
+            }
+            .rating {
+                font-size: 1em; /* Menší velikost písma pro hodnocení */
+            }
+        }
+
+
+
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(Pozadi.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #7b6b6b;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #636060;
+        }
+
+        a:hover {
+            color: #575555;
+        }
+
+        section {
+            animation: fade-in 2s;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        video {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffffb3;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+
+        @media (max-width: 800px) {
+            video {
+                height: 300px;
+            }
+        }
+
+        /* Nový styl pro zarovnání nadpisů na střed */
+        .centered-title {
+            text-align: center;
+            margin: 20px 0; /* Přidání okrajů pro lepší vzhled */
+        }
+
+        /* Vylepšená animace pro nadpis "The Walking Dead" */
+        .animated-title {
+            text-align: center;
+            animation: pulse 2.5s infinite, glow 2.5s infinite alternate;
+            font-size: 2em; /* Velikost písma */
+            color: #ff0000; /* Barva textu */
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Stín textu */
+            padding: 10px; /* Okraje kolem textu */
+            border-radius: 10px; /* Zaoblení rohů */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(0.75); /* Zmenšeno z 1.1 na 1.05 */
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .button {
+            background-color: #ff0000; /* Barva pozadí tlačítka */
+            color: white; /* Barva textu */
+            padding: 10px 20px; /* Vnitřní okraje */
+            text-align: center; /* Zarovnání textu */
+            text-decoration: none; /* Bez podtržení */
+            border-radius: 5px; /* Zaoblení rohů */
+            transition: background-color 0.3s; /* Přechod pro efekt */
+        }
+
+        .button:hover {
+            background-color: #010101; /* Barva poz adí při najetí myší */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="centered-title"><h3>ReficulLive</h3></u> </div>
+            <center>
+                <h1 class="animated-title"><mark><em><b><i>The Walking Dead</i></b></em></mark></h1>
+            </center>
+            <div class="button-container">
+                <a href="https://reficullive.github.io/Zivi-Mrtvi-CZ/ReficulLive%20TWD.html" class="button">Hlavní stránka</a>
+                <a href="https://reficullive.github.io/Sezona-2/Sezona 2.html" class="button">Další sezona</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <ul>
+            <div class="video-container">    <div class="centered-title"> <u><h2>Staré dobré časy</h2></u> </div>
+            <video controls muted>
+                <source src="https://online4.sktorrent.eu/media/videos/h264/6521_480p.mp4" type="video/mp4">
+            </video>
+            <p>První epizoda přivádí na scénu zástupce šerifa Ricka Grimmese (Andrew Lincoln), 
+                který asistuje u akce na zastavení podezřelého vozidla. Rick je v následné přestřelce vážně raněn,
+                 po čase se v nemocnici probouzí k vědomí do světa, který vypadá jako noční můra. Rick odchází z opuštěné 
+                 nemocnice domů a zjišťuje, že mrtví lidé jsou podivně neklidní a jeho rodina zmizela. 
+                 Později se za dramatických okolností seznamuje s Morganem Jonesem (Lennie James) a jeho synem. 
+                 Toto setkání ho nasměruje do Atlanty, kde, jak doufá, najde v evakuačním centru svou rodinu.
+                  Atlanta se však ukáže být velmi nehostinným místem.</p>
+        </ul> </div>
+        
+        <ul>
+            <div class="centered-title"><u><h2>Pach krve</h2></u> </div>
+            <video controls muted loop>
+                <source src="https://online3.sktorrent.eu/media/videos/h264/6520_480p.mp4" type="video/mp4">
+            </video>
+            <p> V malém táboře uprchlíků nedaleko Atlanty přežívá spolu s Rickovým synem Carlem (Chandler Riggs)
+                 i jeho manželka Lori (Sarah Wayne Callies) se svým novým partnerem Shanem Walshem (Jon Bernthal).
+                  Mezitím pomáhá Rickovi z prekérní situace v atlantských ulicích Glenn Rhee (Steven Yeun), jenž ho
+                   odvádí na relativně bezpečné místo, Ricka tam však nečeká příliš vřelé přijetí. Ukazuje se, že 
+                   jde o zásobovací skupinu pro uprchlický tábor za městem, která je nyní díky Rickově záchraně 
+                   obklíčena nemrtvými v obchodním domě. Rick přichází s extrémní formou kamufláže a vzápětí i se způsobem,
+                    jak z města uniknout, za sebou však zanechává Merla Dixona.</p>
+        </ul>
+        
+        <ul>
+            <div class="centered-title"> <u><h2>Krátké shledání</h2></u> </div>
+            <video controls muted loop>
+                <source src="https://online5.sktorrent.eu/media/videos/h264/6522_480p.mp4" type="video/mp4">
+            </video>
+            <p>Výprava se hlučně vrací do tábora, kde dojde k Rickovu setkání s rodinou,
+                 ne všem se ovšem zdá být toto setkání šťastné. Merlův bratr Daryl Dixon
+                  (Norman Reedus) se vrací z lovu do tábora, kde se dozvídá, co se stalo 
+                  s jeho bratrem. Po krátké výměně názorů je rozhodnuto o vyslání malé záchranné 
+                  mise do Atlanty. V průběhu emotivního rozhovoru mezi Lori a Shanem se dozvídáme,
+                   kdo Lori informoval o smrti manžela. V táboře dojde k rozmíšce mezi Edem a skupinou
+                    žen, které se ohradí proti tomu, jak zachází se svou manželkou. Ed manželku 
+                    napadne a do sporu se vloží Shane, jenž si na Edovi vybije svou frustraci. 
+                    Mezitím záchranná skupina v Atlantě dorazí na střechu, na které byl opuštěn Merl Dixon...</p>
+        </ul>
+        
+        <ul>
+            <div class="centered-title"> <u><h2>Rukojmí</h2></u> </div>
+            <video controls muted loop>
+                <source src="https://online2.sktorrent.eu/media/videos/h264/6523_480p.mp4" type="video/mp4">
+            </video>
+            <p>Záchranná výprava dál pátrá v Atlantě po Darylovu bratrovi, Glennovi se podaří sebrat z ulice
+                 tašku se zbraněmi, již tam zanechal při svém útěku z tanku Rick. Glenn a Daryl jsou však 
+                 vzápětí napadeni skupinou mužů, kteří se chtějí zbraní zmocnit. Přestože zbraně nezískají, podaří 
+                 se jim unést Glenna. Rick a Daryl se setkávají s Guillermem, který řídí hispánský gang, aby 
+                 vyměnili jednoho z jeho mužů za uneseného Glenna. Guillermo však za něj požaduje tašku se zbraněmi.
+                  Ve chvíli, kdy se zdá, že se napjatá situace zvrhne v násilí, objeví se nové skutečnosti. V době, 
+                  kdy se vrací atlantská výprava, dojde k útoku nemrtvých na tábor.</p>
+        </ul>
+        
+        <ul>
+            <div class="centered-title"> <u><h2>Lavina</h2></u> </div>
+            <video controls muted loop>
+                <source src="https://online3.sktorrent.eu/media/videos/h264/6525_480p.mp4" type="video/mp4">
+            </video>
+            <p>V táboře pochovávají oběti nočního útoku, ale Andrea Harrison (Laurie Holden) odmítá opustit mrtvou sestru Amy.
+                 Dalším problémem je Jim, který byl v noci pokousán nemrtvými. Shane s Rickem odcházejí prohledat les, Dale Horvath 
+                 (Jeffrey DeMunn) tam překvapí Shanea při jeho slabší chvilce. Přeživší ruší tábor u Atlanty a vyrážejí do 
+                 CDC, kde doufají najít lék na nákazu. Cestou nechávají v lese na jeho vlastní žádost nemocného Jima. V závěru epizody
+                  přijíždí konvoj k budově CDC, v níž osamocený Dr. Edwin Jenner (Noah Emmerich) pracuje na vývoji léku proti probíhající 
+                  epidemii.</p>
+        </ul>
+        
+        <ul>
+            <div class="centered-title">  <u><h2>Testovací subjekt 19</h2></u> </div>
+            <video controls muted loop>
+                <source src="https://online4.sktorrent.eu/media/videos/h264/6526_480p.mp4" type="video/mp4">
+            </video>
+            <p>Úvod šesté epizody přibližuje divákovi události, jež předcházely Rickovu procitnutí v opuštěné nemocnici. 
+                Dr. Jenner všechny uvítá v CDC nečekaným luxusem, zároveň však skupinu informuje o tom, že je přesvědčen
+                 o beznadějnosti situace a seznámí přeživší se záznamy testovacího subjektu 19, které všem ukazují vývoj
+                  choroby v mozku nakaženého člověka. Dále všem objasní, že nevěří ve zlepšení situace, ale přesto přichází
+                   s řešením, které přináší pověstné světlo na konci tunelu. Toto řešení se však nesetkává s velkým pochopením.</p>
+        </ul>
+    </main>
+    <footer>
+        <mark>ReficulLive ... 2024</mark>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
